@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucureștiul în culori</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js"></script> -->
+    <script src="https://kit.fontawesome.com/64b73093c3.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ar-xr3aIOCM1dKEoLSoyDISwfCoCu-TPQRmYhnbkU8lRSftIDvPXdWMLSSSDMY7G]' async defer></script>
+    <script types="text/javascript">
+        function GetMap() {
+            let map = new Microsoft.Maps.Map('#map', {
+                credentials: 'Ar-xr3aIOCM1dKEoLSoyDISwfCoCu-TPQRmYhnbkU8lRSftIDvPXdWMLSSSDMY7G',
+                center: new Microsoft.Maps.Location(44.43966, 26.09630),
+                mapTypeId: Microsoft.Maps.MapTypeId.road, zoom: 11
+            });
+            let center = map.getCenter();
+            // Sector 1
+            let exterior1 = [
+                center, 
+                new Microsoft.Maps.Location(44.456421, 26.101218),
+                new Microsoft.Maps.Location(44.472295, 26.105610),
+                new Microsoft.Maps.Location(44.484544, 26.105610),
+                new Microsoft.Maps.Location(44.539017, 26.103207),
+                new Microsoft.Maps.Location(44.537916, 26.077458),
+                new Microsoft.Maps.Location(44.541832, 26.075055),
+                new Microsoft.Maps.Location(44.539629, 26.067845),
+                new Microsoft.Maps.Location(44.534980, 26.068875),
+                new Microsoft.Maps.Location(44.524211, 26.033169),
+                new Microsoft.Maps.Location(44.527392, 26.028363),
+                new Microsoft.Maps.Location(44.524455, 26.021496),
+                new Microsoft.Maps.Location(44.519804, 26.024930),
+                new Microsoft.Maps.Location(44.513684, 26.009480),
+                new Microsoft.Maps.Location(44.500463, 26.006734),
+                new Microsoft.Maps.Location(44.496300, 25.995404),
+                new Microsoft.Maps.Location(44.499973, 25.987851),
+                new Microsoft.Maps.Location(44.496300, 25.983044),
+                new Microsoft.Maps.Location(44.491647, 25.986821),
+                new Microsoft.Maps.Location(44.483564, 25.984074),
+                new Microsoft.Maps.Location(44.478665, 25.979954),
+                new Microsoft.Maps.Location(44.471070, 25.979611),
+                new Microsoft.Maps.Location(44.466401, 25.976431),
+                new Microsoft.Maps.Location(44.478896, 25.990336),
+                new Microsoft.Maps.Location(44.479753, 26.001494),
+                new Microsoft.Maps.Location(44.455374, 26.058314),
+                new Microsoft.Maps.Location(44.440424, 26.072218),                
+                center
+            ];
+
+            let polygon1 = new Microsoft.Maps.Polygon(exterior1, {
+                fillColor: 'rgba(255, 0, 0, 0.5)',
+                strokeColor: 'black',
+                strokeThickness: 2
+            });
+
+            map.entities.push(polygon1);
+
+            // Sector 2
+            let exterior2 = [
+                center, 
+                new Microsoft.Maps.Location(44.456421, 26.101218),
+                new Microsoft.Maps.Location(44.471858, 26.105681), 
+                new Microsoft.Maps.Location(44.487045, 26.105166),
+                new Microsoft.Maps.Location(44.479452, 26.183958), 
+                new Microsoft.Maps.Location(44.456053, 26.157197),
+                new Microsoft.Maps.Location(44.449804, 26.168680),
+                new Microsoft.Maps.Location(44.453603, 26.176577), 
+                new Microsoft.Maps.Location(44.444289, 26.176577), 
+                new Microsoft.Maps.Location(44.442206, 26.196661), 
+                new Microsoft.Maps.Location(44.436568, 26.182757),
+                center
+            ];
+
+            let polygon2 = new Microsoft.Maps.Polygon(exterior2, {
+                fillColor: 'rgba(255, 165, 0, 0.5)',
+                strokeColor: 'black',
+                strokeThickness: 2
+            });
+
+            map.entities.push(polygon2);
+
+            // Sector 3
+            let exterior3 = [
+                center,
+                new Microsoft.Maps.Location(44.436568, 26.182757), 
+                new Microsoft.Maps.Location(44.442188, 26.196824),
+                new Microsoft.Maps.Location(44.438756, 26.198541),
+                new Microsoft.Maps.Location(44.438633, 26.204892),
+                new Microsoft.Maps.Location(44.433240, 26.210901),
+                new Microsoft.Maps.Location(44.434834, 26.215192),
+                new Microsoft.Maps.Location(44.431034, 26.219140),
+                new Microsoft.Maps.Location(44.432382, 26.225663),
+                new Microsoft.Maps.Location(44.425517, 26.221029),
+                new Microsoft.Maps.Location(44.424291, 26.224633),
+                new Microsoft.Maps.Location(44.418284, 26.220857),
+                new Microsoft.Maps.Location(44.418652, 26.217939),
+                new Microsoft.Maps.Location(44.407125, 26.217595),
+                new Microsoft.Maps.Location(44.406144, 26.211244),
+                new Microsoft.Maps.Location(44.404673, 26.211244),
+                new Microsoft.Maps.Location(44.404305, 26.208154),
+                new Microsoft.Maps.Location(44.399031, 26.213304),
+                new Microsoft.Maps.Location(44.398418, 26.211587),
+                new Microsoft.Maps.Location(44.395229, 26.212102),
+                new Microsoft.Maps.Location(44.393634, 26.181375),
+                new Microsoft.Maps.Location(44.408842, 26.122838),
+                new Microsoft.Maps.Location(44.418958, 26.111251),
+                new Microsoft.Maps.Location(44.425058, 26.108547),
+                new Microsoft.Maps.Location(44.426161, 26.100823),
+                new Microsoft.Maps.Location(44.428735, 26.100823),
+
+                center
+            ];
+
+            let polygon3 = new Microsoft.Maps.Polygon(exterior3, {
+                fillColor: 'rgba(255, 255, 0, 0.5)',
+                strokeColor: 'black',
+                strokeThickness: 2
+            });
+
+            map.entities.push(polygon3);
+
+
+            // Sector 4
+            let exterior4 = [
+                center,
+                new Microsoft.Maps.Location(44.428735, 26.100823), 
+                new Microsoft.Maps.Location(44.426161, 26.100823),
+                new Microsoft.Maps.Location(44.425058, 26.108547),
+                new Microsoft.Maps.Location(44.418958, 26.111251),
+                new Microsoft.Maps.Location(44.408842, 26.122838),
+                new Microsoft.Maps.Location(44.398315, 26.161620),
+                new Microsoft.Maps.Location(44.373043, 26.143424),
+                new Microsoft.Maps.Location(44.370589, 26.144111),
+                new Microsoft.Maps.Location(44.368380, 26.143081),
+                new Microsoft.Maps.Location(44.347024, 26.160590),
+                new Microsoft.Maps.Location(44.346779, 26.164367),
+                new Microsoft.Maps.Location(44.344078, 26.167114),
+                new Microsoft.Maps.Location(44.342114, 26.163337),
+                new Microsoft.Maps.Location(44.340149, 26.158187),
+                new Microsoft.Maps.Location(44.336466, 26.156814),
+                new Microsoft.Maps.Location(44.334747, 26.152351),
+                new Microsoft.Maps.Location(44.349234, 26.129005),
+                new Microsoft.Maps.Location(44.351443, 26.131408),
+                new Microsoft.Maps.Location(44.361017, 26.110465),
+                new Microsoft.Maps.Location(44.358071, 26.106345),
+                new Microsoft.Maps.Location(44.361508, 26.102226),
+                new Microsoft.Maps.Location(44.362490, 26.097419),
+                new Microsoft.Maps.Location(44.359790, 26.094672),
+                new Microsoft.Maps.Location(44.371571, 26.086776),
+                new Microsoft.Maps.Location(44.379669, 26.090896),
+                new Microsoft.Maps.Location(44.383104, 26.084029),
+                new Microsoft.Maps.Location(44.385558, 26.090896),
+                new Microsoft.Maps.Location(44.389729, 26.090209),
+                new Microsoft.Maps.Location(44.403956, 26.096732),
+                new Microsoft.Maps.Location(44.412541, 26.089866),
+                new Microsoft.Maps.Location(44.415238, 26.093299),
+                new Microsoft.Maps.Location(44.422349, 26.089179),
+                new Microsoft.Maps.Location(44.429460, 26.095359),
+                center
+            ];
+
+            let polygon4 = new Microsoft.Maps.Polygon(exterior4, {
+                fillColor: 'rgba(0, 255, 0, 0.5)',
+                strokeColor: 'black',
+                strokeThickness: 2
+            });
+
+            map.entities.push(polygon4);
+
+            // Sector 5
+            let exterior5 = [
+                center, 
+                new Microsoft.Maps.Location(44.429460, 26.095359),
+                new Microsoft.Maps.Location(44.422349, 26.089179),
+                new Microsoft.Maps.Location(44.415238, 26.093299),
+                new Microsoft.Maps.Location(44.412541, 26.089866),
+                new Microsoft.Maps.Location(44.403956, 26.096732),
+                new Microsoft.Maps.Location(44.389729, 26.090209),
+                new Microsoft.Maps.Location(44.385558, 26.090896), 
+                new Microsoft.Maps.Location(44.383104, 26.084029), 
+                new Microsoft.Maps.Location(44.379669, 26.090896), 
+                new Microsoft.Maps.Location(44.371571, 26.086776), 
+                new Microsoft.Maps.Location(44.379404, 26.056182), 
+                new Microsoft.Maps.Location(44.376214, 26.053950), 
+                new Microsoft.Maps.Location(44.377564, 26.047084), 
+                new Microsoft.Maps.Location(44.374864, 26.045711), 
+                new Microsoft.Maps.Location(44.383085, 26.033008), 
+                new Microsoft.Maps.Location(44.387378, 26.039187), 
+                new Microsoft.Maps.Location(44.390445, 26.034553), 
+                new Microsoft.Maps.Location(44.388728, 26.029918), 
+                new Microsoft.Maps.Location(44.405654, 26.010520),
+                new Microsoft.Maps.Location(44.403079, 25.997474), 
+                new Microsoft.Maps.Location(44.408720, 25.999705), 
+                new Microsoft.Maps.Location(44.413625, 26.034038), 
+                new Microsoft.Maps.Location(44.407494, 26.030089), 
+                new Microsoft.Maps.Location(44.408842, 26.046054), 
+                new Microsoft.Maps.Location(44.419142, 26.059615), 
+                new Microsoft.Maps.Location(44.434466, 26.059615), 
+                new Microsoft.Maps.Location(44.437898, 26.070601),                 
+                center
+            ];
+
+            let polygon5 = new Microsoft.Maps.Polygon(exterior5, {
+                fillColor: 'rgba(0, 0, 255, 0.5)',
+                strokeColor: 'black',
+                strokeThickness: 2
+            });
+
+            map.entities.push(polygon5);
+
+             // Sector 6
+             let exterior6 = [
+                center, 
+                new Microsoft.Maps.Location(44.437898, 26.070601),
+                new Microsoft.Maps.Location(44.434466, 26.059615),
+                new Microsoft.Maps.Location(44.419142, 26.059615),
+                new Microsoft.Maps.Location(44.408842, 26.046054),
+                new Microsoft.Maps.Location(44.407494, 26.030089),
+                new Microsoft.Maps.Location(44.413625, 26.034038),
+                new Microsoft.Maps.Location(44.408720, 25.999705),
+                new Microsoft.Maps.Location(44.406464, 25.975916),
+                new Microsoft.Maps.Location(44.416274, 25.970423),
+                new Microsoft.Maps.Location(44.416519, 25.965273),
+                new Microsoft.Maps.Location(44.412301, 25.963728),
+                new Microsoft.Maps.Location(44.422281, 25.968363),
+                new Microsoft.Maps.Location(44.440791, 25.966475),
+                new Microsoft.Maps.Location(44.442997, 26.012309),
+                new Microsoft.Maps.Location(44.448390, 26.020377),
+                new Microsoft.Maps.Location(44.449983, 26.014540),
+                new Microsoft.Maps.Location(44.453904, 26.012823),
+                new Microsoft.Maps.Location(44.455374, 26.016085),
+                new Microsoft.Maps.Location(44.466401, 25.976431),
+                new Microsoft.Maps.Location(44.478896, 25.990336),
+                new Microsoft.Maps.Location(44.479753, 26.001494),
+                new Microsoft.Maps.Location(44.455374, 26.058314),
+                new Microsoft.Maps.Location(44.440424, 26.072218),
+
+                center
+            ];
+
+            let polygon6 = new Microsoft.Maps.Polygon(exterior6, {
+                fillColor: 'rgba(238, 130, 238, 0.5)',
+                strokeColor: 'black',
+                strokeThickness: 2
+            });
+
+            map.entities.push(polygon6);
+        }
+        </script>
+</head>
+<body> 
+    <div class="header">
+        <ul>
+            <li><a href="#bucurești">București</a></li>
+            <li><a href="#despre_mine">Despre mine</a></li>
+        </ul>
+    </div>
+    
+    <h1 id="bucurești">BUCUREȘTIUL ÎN CULORI</h1>
+    <div class="text">
+        <p>Bucureștiul, asemenea multor orașe din România, este văzut ca un oraș predominant gri și mohorât. De aceea, am hotărât să-l colorăm noi în viile culori ale curcubeului.</p>
+    </div>
+    
+    <div id="map"></div>
+    
+    <div class="about">
+        <h2 id="despre_mine">Despre mine</h2>
+        <div class="info">
+            <div class="image">
+                <img src="./Images/about.png">
+                <div class="social_media">
+                    <div class="item"><a href="https://500px.com/alexandraandradaserban" target="_blank"><i class="fab fa-500px"></i></a></div>
+                    <div class="item"><a href="https://www.linkedin.com/in/alexandra-serban-a392571a1/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="item"><a href="https://github.com/Alexandra21Serban" target="_blank"><i class="fab fa-github"></i></a></div>
+                </div>
+            </div>
+            <p>Numele meu este Alexandra Șerban, am 30 de ani și locuiesc în București de 4 ani. Îmi place să petrec timp în natură, să fac fotografii și să descopăr activități noi, lucru ce m-a ajutat să descopăr o nouă pasiune, și anume dezvoltarea web. Cred în faptul că dezvoltarea profesională trebuie să fie continuă, de aceea îmi dedic timpul pentru a acumula cât mai multe cunoștințe, care mă vor ajuta să devin un dezvoltator web profesionist. 
+                Link-urile de pe imaginea de mai sus vă vor arăta experiența mea, iar pentru mai multe detalii mă puteți contacta la numărul de telefon: 0785 642 890 și email: alexandra.andrada.serban@gmail.com. 
+                </p>
+        </div>
+    </div>
+
+</body>     
+</html>
+
+
